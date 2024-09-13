@@ -1,3 +1,22 @@
-<head>Hi Kelvin, Your Weather App is Working!</head>
-<head>This project is coming soon!!!!!</head>
+<div class="container">
+    <div class="upper-data">
+        <img src="../assets/images/Hot.png" *ngIf="14 > 15">
+        <img src="../assets/images/Cold.png" *ngIf="14 <= 15">
+
+        <div class="weather-data">
+            <div class="location">Wellington</div>
+            <div class="temperature">{{ 14.40 | number: '1.0-0'}}°C</div>
+        </div>
+    </div>
+
+    <div class="lower-data">
+        <!-- timestamp:14 minutes -->
+
+    </div>
+
+</div>
+
+
+
+
 <router-outlet />
